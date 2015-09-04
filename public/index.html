@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app="flower">
+  <head>
+    <title>Flower Detector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container" ng-controller="FlowerController">
+      <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+          <div class="pull-right">
+            <a href="#" class="brand">Aimee Cheng</a>
+          </div>
+        </div>
+      </div>
+      <div class="page-header">
+        <h1>Flower Detector</h1>
+      </div>
+          <ul class="nav nav-list well">
+            <li class="nav-header">Detection Result</li>
+            <li class="nav-body" ng-repeat="item in flowerList">
+              {{item}}
+            </li>
+          </ul>
+    </div>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
